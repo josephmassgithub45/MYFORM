@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Application Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="STYLES.CSS"/>
+        <script src="FUNCTION.JS"></script>
+    </head>
+    <body>
+        <H1>MASS'S  WEB  DEVELOPMENT</H1>
+        <H3>APPLICATION</H3>
+        <h4>Please fill out this form with the required information</h4>
+        <H2>CE0 : Joseph Massaquoi</H2>
+        <form action="https://formspree.io/f/xvoyvdpl" method="POST">
+            <fieldset class="fset">
+                <legend> NAME </legend>
+                <label for="firstname"> First Name : <br><input id="FN1" class="inp1" name="firstname" type="text" ></label><br>
+                <label for="middlename"> Middle Name : <br><input id="MN1" class="inp1" name="middlename" type="text" ></label><br>
+                <label for="lastname"> Last Name : <br><input id="LN1" class="inp1" name="lastname" type="text" ></label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="fset">
+                <legend> BIRTH DATE </legend>
+                <label for="Date1"> Date Of Birth : <br><input id="D1" name="date" type="date" ></label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="fset">
+                <legend> OTHERS </legend>
+                <label for="address1"> Address : <br><input id="AD1"  name="address" class="inp1" type="text" ></label><br>
+                <label for="level1"> 
+                    Level Of Education : <br>
+                    <select id="level1" name="level_of_education">
+                        option
+                        <option value="1"> BECCE </option>
+                        <option value="2"> WASSCE </option>
+                        <option value="3"> DIPLOMA </option>
+                        <option value="4"> DEGREE </option>
+                        <option value="5"> MASTERS </option>
+                    </select> 
+                </label><br>
+                <label for="level2"> 
+                    What's Your Marital Status? : <br>
+                    <select id="level2" name="marital_status">
+                        <option value="1">(select one)</option>
+                        <option value="2"> MARRIED </option>
+                        <option value="3"> SINGLE </option>
+                    </select>
+                </label><br>
+                <label for="exp1"> Year Of Experience : <br><input id="EXP1" class="inp1" name="year_of_experience" type="number" ></label>
+            </fieldset>
+            <br>
+            <input id="sub1" type="submit" name="subform" value="SUBMIT" onclick=message()>
+            <H1> Developed By Joseph Massaquoi.</H1>
+        </form> 
+    </body>
+</html>
